@@ -10,6 +10,7 @@
 		C4E4B1B12260F055007149A4 /* PanelView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4B1A72260F055007149A4 /* PanelView.framework */; };
 		C4E4B1B62260F055007149A4 /* PanelViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E4B1B52260F055007149A4 /* PanelViewTests.swift */; };
 		C4E4B1B82260F055007149A4 /* PanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4B1AA2260F055007149A4 /* PanelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4E4B1C22260F0EE007149A4 /* PanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E4B1C12260F0EE007149A4 /* PanelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		C4E4B1B02260F055007149A4 /* PanelViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanelViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E4B1B52260F055007149A4 /* PanelViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewTests.swift; sourceTree = "<group>"; };
 		C4E4B1B72260F055007149A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E4B1C12260F0EE007149A4 /* PanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C4E4B1AA2260F055007149A4 /* PanelView.h */,
+				C4E4B1C12260F0EE007149A4 /* PanelView.swift */,
 				C4E4B1AB2260F055007149A4 /* Info.plist */,
 			);
 			path = PanelView;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					C4E4B1A62260F055007149A4 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					C4E4B1AF2260F055007149A4 = {
 						CreatedOnToolsVersion = 10.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E4B1C22260F0EE007149A4 /* PanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		C4E4B1BC2260F055007149A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.PanelView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		C4E4B1BD2260F055007149A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		C4E4B1BF2260F055007149A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHY6ZSRL6G;
 				INFOPLIST_FILE = PanelViewTests/Info.plist;
@@ -409,6 +418,7 @@
 		C4E4B1C02260F055007149A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHY6ZSRL6G;
 				INFOPLIST_FILE = PanelViewTests/Info.plist;
